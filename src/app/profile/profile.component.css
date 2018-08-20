@@ -9,3 +9,11 @@ h1{
 body {
     font-family: 'Caveat';font-size: 22px;
 }
+h3{
+    text-align: center;
+    font-family: 'Calligraffitti';font-size: 30px;
+}
+.gitsearch{
+    margin-right: 0%;
+    margin-left: 32%;
+}

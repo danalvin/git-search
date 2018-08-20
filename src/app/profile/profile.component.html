@@ -1,8 +1,9 @@
+<img class="gitsearch" src="/src/assets/gitsearch.png" alt="Gaitsearch">
 <h1>Git search -- <span>Dan Alvin</span></h1>
 
 <form class="search-form"  action="" >
     <div class="form-group">
-      <input type="text"  class="form-control" placeholder="search github user"
+      <input  type="text"  class="form-control" placeholder="search github user"
       [(ngModel)]="username" name="username"(keyup)="findProfile()" >
     </div>
   
@@ -37,9 +38,9 @@
         <div class="col-md-4">
           <div>
             <p>
-              <button class="btn btn-default btn-sm waves-effect" class="btn pulse btn red waves-effect">{{profile.public_repos}} Public Repos</button>
-              <button class="btn btn-primary btn-sm" class=" btn orange">{{profile.followers}} Followers</button>
-              <button class="btn btn-success btn-sm" class=" btn green" > {{profile.following}} Following</button>
+              <button button type="button" class="btn btn-primary">{{profile.public_repos}} Public Repos</button>
+              <button button type="button" class="btn btn-info">{{profile.followers}} Followers</button> 
+              <button button type="button" class="btn btn-success" > {{profile.following}} Following</button>
   
             </p>
             <p><a href="{{profile.html_url}}" class="btn btn-success btn-sm" target="_blank">View profile on github</a></p>
